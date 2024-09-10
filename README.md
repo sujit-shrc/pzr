@@ -1,6 +1,6 @@
-# pzr CLI
+# pzr (pazer) CLI
 
-pzr is a powerful CLI tool for generating project structures and files for Next.js, Express.js, and Vite React projects. It simplifies the process of creating new pages, routes, and components, allowing developers to focus on writing business logic rather than boilerplate code.
+pzr is a CLI tool for generating project structures and files for Next.js, Express.js, and Vite React projects. It simplifies the process of creating new pages, routes, and components, allowing developers to focus on writing business logic rather than boilerplate code.
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ npm install -g pzr
 yarn global add pzr
 ```
 
-> **Note:** Global installation allows you to use pzr from any directory on your system.
+> **Note:** Global installation allows you to use `pzr` from any directory on your system.
 
 ## Usage
 

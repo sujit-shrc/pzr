@@ -8,7 +8,7 @@ export async function getConfig(): Promise<ProjectConfig> {
     return await fs.readJson(CONFIG_FILE);
   } catch (error) {
     Error(
-      "Configuration file not found. Please run `npx pzr init/ pzr init` first.",
+      "Configurations file not found. Please run `npx pzr init/ pzr init` first.",
     );
     process.exit(1);
   }

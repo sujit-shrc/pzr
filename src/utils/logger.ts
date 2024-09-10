@@ -9,5 +9,5 @@ export function error(message: string): void {
 }
 
 export function info(message: string): void {
-  console.log(chalk.blue(`ℹ${message}`));
+  console.log(chalk.yellow(` ${message}`));
 }

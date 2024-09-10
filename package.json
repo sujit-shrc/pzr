@@ -1,6 +1,6 @@
 {
   "name": "pzr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI tool for generating Next.js, Express.js, and Vite React project structures",
   "main": "dist/pzr/index.js",
   "types": "dist/pzr/index.d.ts",

@@ -19,19 +19,23 @@ async function init(): Promise<void> {
       useSrcDirectory: await detectSrcDirectory(),
     };
 
-    spinner.succeed("Project configuration detected");
+    if (detectedConfig) spinner.succeed("Project configuration detected");
 
     const confirmedConfig = await confirmConfiguration(detectedConfig);
 
     await setConfig(confirmedConfig);
 
-    success("Configuration saved successfully");
+    success("Configurations saved successfully");
     info(
-      "You can now use `pzr c/create` to create new pages, routes, or components",
+      "You can now use `pzr -c/create` to create new pages, routes, or templates",
     );
   } catch (err) {
-    spinner.fail("Failed to initialize project");
-    error(err instanceof Error ? err.message : "An unknown error occurred");
+    spinner.fail("Initialization failed!");
+    error(
+      err instanceof Error
+        ? err.message
+        : "An unknown error occurred. Please check your setup and try again!",
+    );
   }
 }
 
