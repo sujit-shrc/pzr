@@ -1,0 +1,58 @@
+{
+  "name": "pzr",
+  "version": "1.0.0",
+  "description": "A CLI tool for generating Next.js, Express.js, and Vite React project structures",
+  "main": "dist/pzr/index.js",
+  "types": "dist/pzr/index.d.ts",
+  "type": "module",
+  "bin": {
+    "pzr": "./bin/pzr.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/pzr/index.js",
+    "dev": "node --loader ts-node/esm src/pzr/index.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "nextjs",
+    "expressjs",
+    "vite",
+    "react",
+    "typescript",
+    "javascript"
+  ],
+  "author": "sujit-shrc | sujit.shrc@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sujit-shrc/pzr.git"
+  },
+  "homepage": "https://github.com/sujit-shrc/pzr#readme",
+  "bugs": {
+    "url": "https://github.com/sujit-shrc/pzr/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.3.0",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^9.0.0",
+    "ora": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/inquirer": "^8.2.1",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.18.0",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": ">=14.16.0"
+  }
+}

@@ -1,0 +1,16 @@
+src/
+tests/
+*.ts
+*.map
+*.log
+*.test.ts
+LICENSE
+
+node_modules
+dist
+*.tsbuildinfo
+
+tsconfig.json
+
+package-lock.json
+yarn.lock
