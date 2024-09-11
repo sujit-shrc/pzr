@@ -1,10 +1,11 @@
 # pzr (pazer) CLI
 
-> 🚀 Supercharge your web development workflow with pzr - the CLI based templates generator tool for Next.js, Express.js, and Vite React projects!
+> [!NOTE]
+> Supercharge your web development workflow with pzr - the CLI based templates generator tool for Next.js, Express.js, and Vite React projects!
 
 pzr simplifies the process of creating new pages, routes, and components, allowing developers to focus on writing business logic rather than boilerplate code.
 
-## Why pzr?
+## Why `pzr`?
 
 - 🔮 **Smart Project Config Detection**: Automatically identifies your project type and configuration
 - ⚡ **Lightning-Fast Setup**: Initialize new projects or add pzr to existing ones with a single command
@@ -28,7 +29,7 @@ Whether you're a seasoned developer or just starting out, pzr helps you focus on
 
 ## Installation
 
-Install pzr globally using npm or yarn:
+Install `pzr` globally using `npm` or `yarn`:
 
 ```bash
 npm install -g pzr
@@ -36,7 +37,8 @@ npm install -g pzr
 yarn global add pzr
 ```
 
-> 💡 **Tip:** Global installation allows you to use `pzr` from any directory on your system.
+> [!TIP]
+> Global installation allows you to use `pzr` from any directory on your system.
 
 ## Usage
 
@@ -82,13 +84,14 @@ pzr create -d dashboard/settings profile
 pzr -c -d dashboard/settings profile
 ```
 
-> 💡**Tip:** You can create multiple pages/routes at once by listing them after the `create` command or `-c` flag.
+> [!TIP]
+> You can create multiple pages/routes at once by listing them after the `create` command or `-c` flag.
 
 ## Project-Specific Usage
 
 ### Local Installation
 
-If you prefer not to install pzr globally, use it on a per-project basis:
+If you prefer not to install `pzr` globally, use it on a per-project basis:
 
 1. Install as a dev dependency:
 
@@ -98,7 +101,7 @@ If you prefer not to install pzr globally, use it on a per-project basis:
    yarn add --dev pzr
    ```
 
-2. Run pzr commands using npx:
+2. Run `pzr` commands using `npx`:
 
    ```bash
    npx pzr init
@@ -116,7 +119,7 @@ If you prefer not to install pzr globally, use it on a per-project basis:
    }
    ```
 
-   Then use npm or yarn to run the commands:
+   Then use `npm` or yarn to run the commands:
 
    ```bash
    npm run pzr:init
@@ -126,9 +129,9 @@ If you prefer not to install pzr globally, use it on a per-project basis:
    yarn pzr:create home about
    ```
 
-### Via npx (without installation)
+### Via `npx` (without installation)
 
-Use pzr without installation via npx:
+Use `pzr` without installation via npx:
 
 ```bash
 npx pzr init
@@ -136,13 +139,14 @@ npx pzr -c home about
 npx pzr -c -d dashboard/settings profile
 ```
 
-> ⚠️ **Note:** Using npx without installation may result in slower execution times as it downloads the package each time.
+> [!WARNING]
+> Using `npx` without installation may result in slower execution times as it downloads the package each time.
 
 ## Features
 
 ### 🔍 Automatic Project Configuration Detection
 
-pzr intelligently detects:
+`pzr` intelligently detects:
 
 - **Project Type**: Next.js, Express.js, or Vite React
 - **Language**: TypeScript or JavaScript
@@ -151,7 +155,7 @@ pzr intelligently detects:
 
 ### 🖥️ User Confirmation Prompts
 
-After detection, pzr will display the detected settings and prompt you to confirm or customize them, ensuring accuracy and flexibility.
+After detection, `pzr` will display the detected settings and prompt you to confirm or customize them, ensuring accuracy and flexibility.
 
 ### 📁 Project-Specific File Generation
 
@@ -170,20 +174,23 @@ After detection, pzr will display the detected settings and prompt you to confir
 - **Vite React**:
   - Generates `.jsx` or `.tsx` components in the `/components` directory
 
-> 🚀 **Coming Soon:** We're actively working on adding support for more project types!
+> [!IMPORTANT]
+> We're actively working on adding support for more project types!
 
 ## Configuration
 
 pzr stores its configuration in a `.pzr-config.json` file in your project root. This file is created when you run `pzr init` and contains information about your project type, language preference, and other settings.
 
-> ⚠️ **Warning:** It's recommended to use the `pzr init` command to modify your configuration. Manual edits to `.pzr-config.json` may lead to unexpected behavior.
+> [!CAUTION]
+> It's recommended to use the `pzr init` command to modify your configuration. Manual edits to `.pzr-config.json` may lead to unexpected behavior.
 
 ## Support
 
 For bug reports and feature requests, please open an issue on our [GitHub repository](https://github.com/sujit-shrc/pzr).
 
-> 🤝 **Contribute:** We welcome contributions! Feel free to submit pull requests to help improve pzr.
+> [!IMPORTANT]
+> 🤝 We welcome contributions! Feel free to submit pull requests to help improve pzr.
 
 ## License
 
-pzr is released under the MIT License. See the LICENSE file for more details.
+`pzr` is released under the MIT License. See the LICENSE file for more details.
