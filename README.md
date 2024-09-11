@@ -1,6 +1,7 @@
 # pzr (pazer) CLI
 
 > [!NOTE]
+> 
 > Supercharge your web development workflow with pzr - the CLI based templates generator tool for Next.js, Express.js, and Vite React projects!
 
 pzr simplifies the process of creating new pages, routes, and components, allowing developers to focus on writing business logic rather than boilerplate code.
@@ -38,6 +39,7 @@ yarn global add pzr
 ```
 
 > [!TIP]
+> 
 > Global installation allows you to use `pzr` from any directory on your system.
 
 ## Usage
@@ -85,6 +87,7 @@ pzr -c -d dashboard/settings profile
 ```
 
 > [!TIP]
+> 
 > You can create multiple pages/routes at once by listing them after the `create` command or `-c` flag.
 
 ## Project-Specific Usage
@@ -140,6 +143,7 @@ npx pzr -c -d dashboard/settings profile
 ```
 
 > [!WARNING]
+> 
 > Using `npx` without installation may result in slower execution times as it downloads the package each time.
 
 ## Features
@@ -175,6 +179,7 @@ After detection, `pzr` will display the detected settings and prompt you to conf
   - Generates `.jsx` or `.tsx` components in the `/components` directory
 
 > [!IMPORTANT]
+> 
 > We're actively working on adding support for more project types!
 
 ## Configuration
@@ -182,6 +187,7 @@ After detection, `pzr` will display the detected settings and prompt you to conf
 pzr stores its configuration in a `.pzr-config.json` file in your project root. This file is created when you run `pzr init` and contains information about your project type, language preference, and other settings.
 
 > [!CAUTION]
+> 
 > It's recommended to use the `pzr init` command to modify your configuration. Manual edits to `.pzr-config.json` may lead to unexpected behavior.
 
 ## Support
@@ -189,6 +195,7 @@ pzr stores its configuration in a `.pzr-config.json` file in your project root. 
 For bug reports and feature requests, please open an issue on our [GitHub repository](https://github.com/sujit-shrc/pzr).
 
 > [!IMPORTANT]
+> 
 > 🤝 We welcome contributions! Feel free to submit pull requests to help improve pzr.
 
 ## License
