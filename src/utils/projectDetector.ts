@@ -33,12 +33,17 @@ export async function detectSrcDirectory(): Promise<boolean> {
 export async function detectRouterType(): Promise<
   "App Router" | "Pages Router" | undefined
 > {
-  if (await fs.pathExists("app")) {
+  const potentialPaths = ["app", "pages", "src", "src/app", "src/pages"];
+
+  const existingPaths = await Promise.all(
+    potentialPaths.map((path) => fs.pathExists(path)),
+  );
+
+  if (existingPaths[0] || existingPaths[2]) {
     return "App Router";
-  }
-  if (await fs.pathExists("pages")) {
+  } else if (existingPaths[1] || existingPaths[3]) {
     return "Pages Router";
   }
-  // If neither is found, return undefined
+
   return undefined;
 }
