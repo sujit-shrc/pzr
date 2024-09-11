@@ -66,7 +66,7 @@ async function generateNextjsFiles(
   pageDir: string,
   config: ProjectConfig,
 ): Promise<void> {
-  const baseDir = config.useSrcDirectory ? "src" : "";
+  const baseDir = config.usingSrcDir ? "src" : "";
   const pagesDir = config.router === "App Router" ? "app" : "pages";
   const ext = config.language === "TypeScript" ? "tsx" : "js";
 
@@ -82,14 +82,14 @@ async function generateNextjsFiles(
     path.join(baseDir, pagesDir, pageDir, `loading.${ext}`),
     getTemplate("nextJs", "loading", config),
   );
-  info(` Next.js routes created for: ${chalk.blue(pageDir)}`);
+  info(` Next.js routes created for: ${chalk.blue(pageDir)}`);
 }
 
 async function generateExpressFiles(
   resource: string,
   config: ProjectConfig,
 ): Promise<void> {
-  const baseDir = config.useSrcDirectory ? "src" : "";
+  const baseDir = config.usingSrcDir ? "src" : "";
   const ext = config.language === "TypeScript" ? "ts" : "js";
 
   await createFile(
@@ -115,7 +115,7 @@ async function generateViteReactFiles(
   componentDir: string,
   config: ProjectConfig,
 ): Promise<void> {
-  const baseDir = config.useSrcDirectory ? "src" : "";
+  const baseDir = config.usingSrcDir ? "src" : "";
   const ext = config.language === "TypeScript" ? "tsx" : "jsx";
 
   await createFile(

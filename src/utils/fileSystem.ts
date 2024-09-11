@@ -14,7 +14,7 @@ export async function updateAppFile(
   resource: string,
   config: ProjectConfig,
 ): Promise<void> {
-  const baseDir = config.useSrcDirectory ? "src" : "";
+  const baseDir = config.usingSrcDir ? "src" : "";
   const appFile = path.join(
     baseDir,
     `app.${config.language === "TypeScript" ? "ts" : "js"}`,

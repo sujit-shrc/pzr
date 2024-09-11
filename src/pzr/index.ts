@@ -60,6 +60,6 @@ program.action((options) => {
 });
 
 export function run() {
-  console.log(chalk.green("pzr v" + version));
+  console.log(chalk.yellowBright(" pzr  " + version));
   program.parse();
 }

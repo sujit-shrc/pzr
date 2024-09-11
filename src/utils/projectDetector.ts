@@ -29,3 +29,16 @@ export async function detectLanguage(): Promise<"TypeScript" | "JavaScript"> {
 export async function detectSrcDirectory(): Promise<boolean> {
   return await fs.pathExists("src");
 }
+
+export async function detectRouterType(): Promise<
+  "App Router" | "Pages Router" | undefined
+> {
+  if (await fs.pathExists("app")) {
+    return "App Router";
+  }
+  if (await fs.pathExists("pages")) {
+    return "Pages Router";
+  }
+  // If neither is found, return undefined
+  return undefined;
+}
